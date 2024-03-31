@@ -1,0 +1,44 @@
+# https://github.com/helix-editor/helix/wiki/Themes
+theme = "Bogster" # ferra
+
+[editor]
+line-number = "relative"  # absolute
+mouse = true
+cursorline = true
+gutters = ["diagnostics", "line-numbers", "spacer"]
+auto-completion = true
+auto-format = true
+auto-info = true
+true-color = true
+color-modes = true
+bufferline = "multiple"
+
+[editor.indent-guides]
+render = true
+character = "│"
+skip-levels = 0
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+center = []
+right = ["diagnostics", "selections", "position", "file-encoding"]
+separator = "│"
+mode.normal = "NOR"
+mode.insert = "INS"
+mode.select = "SEL"
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.insert]
+j = { k = "normal_mode" }
+
+[keys.normal]
+C-s = ":w"
+C-o = ":config-open"
+G = "goto_last_line"
