@@ -1,5 +1,7 @@
 # https://github.com/helix-editor/helix/wiki/Themes
-theme = "Bogster" # ferra
+#theme = "Bogster"
+#theme = "ferra"
+theme = "horizon-dark" # ferra
 
 [editor]
 line-number = "relative"  # absolute
